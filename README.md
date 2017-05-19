@@ -1,3 +1,17 @@
+# iterpysoserial 
+
+download a copy of ysoserial-master-SNAPSHOT.jar to ysoserial/src/main/java 
+
+todo: enter the rest of usage notes.
+
+Improvements:
+
+Multithreaded (improves performance_ 
+OS detection 
+Modes:
+   Quick scan and Full scan
+   Quick Exploit and Thorough Exploit
+
 
 # ysoserial 
 
