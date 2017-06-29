@@ -6,7 +6,7 @@
 #author          :Matthew Turner (@Strupo_), PlaceHolder
 #date            :2017-05-22
 #version         :1.0
-#usage           :python iterpysoserial.py
+#usage           :./iterpysoserial.py --host 127.0.0.1 --port 80
 #notes           :This is a work in progress and is my first python project.
 #                 Many thanks to PlaceHolder who got this script started.
 #python_version  :3
