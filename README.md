@@ -3,8 +3,11 @@
 Default settings will throw the RMIRegistryExploit and Jdk7u21 payload combination over the ports listed in ports.txt against the systems you've defined in targets.txt. 
 
 You must define targets in targets.txt
+
 You must define a webhost (--host), this will serve up your ps1 or elf.
+
 You must define a webhost port (--port), this is the port that victim will connect to your webhost on. 
+
 
 This should be considered a scanner and so a lot of noise should be expected.
 
