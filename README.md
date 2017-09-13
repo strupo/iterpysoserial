@@ -17,6 +17,10 @@ If you're so inclined, feel free to use all the payloads instead of only Jdk7u21
 
 
 
+usage: iterpysoserial.py [-h] [--targets TARGETS] [--ports PORTS]
+                         [--exploits EXPLOITS] [--payloads PAYLOADS] --host
+                         HOST --port PORT
+
 
 # ysoserial 
 
