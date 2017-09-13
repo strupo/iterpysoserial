@@ -16,28 +16,9 @@ For pwnage, comment out the first command that tells your webhost which system i
 If you're so inclined, feel free to use all the payloads instead of only Jdk7u21. I haven't played with a lot of the newer payloads that are included now, but my experience from when this was relatively new showed that more than 90% of the time if Groovy1 or any of the Sping or CommonCollections payloads worked, so did Jdk7u21. 
 
 
-  usage: iterpysoserial.py [-h] [--targets TARGETS] [--ports PORTS]
-                         [--exploits EXPLOITS] [--payloads PAYLOADS] --host
-                         HOST --port PORT
-
-  ysoserial iterator. Defaults will scan targets.txt on the ports listed in
-  ports.txt, using the Jdk7u21 payload and RMIRegistryExploit combination.
-  Vulnerable Windows systems will make a web connection to your specified
-  webhost and specified port informing you of which systems are vulnerable, on
-  which port, and which payload/exploit combintation.
-  
-  optional arguments:
-    -h, --help           show this help message and exit
-    --targets TARGETS    File containing a list of targets. Default=targets.txt
-    --ports PORTS        File containing a list of ports to try on each target.
-                         Default=ports.txt
-    --exploits EXPLOITS  File containing exploits to use.
-                         Default=RMIRegistryExploit.txt
-    --payloads PAYLOADS  File containing payloads to use. Default=Jdk7u21.txt
-    --host HOST          Webhost
-    --port PORT          Webhost Port
-
-
+	usage: iterpysoserial.py [-h] [--targets TARGETS] [--ports PORTS]
+ 	                        [--exploits EXPLOITS] [--payloads PAYLOADS] --host
+ 	                        HOST --port PORT
 
 # ysoserial 
 
