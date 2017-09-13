@@ -4,12 +4,12 @@ Default settings will throw the RMIRegistryExploit and Jdk7u21 payload combinati
 
 You must define targets in targets.txt
 
-You must define a webhost (--host), this will serve up your ps1 or elf.
+You must define a webhost (--host), this will listen for connections or serve up your ps1/elf.
 
 You must define a webhost port (--port), this is the port that victim will connect to your webhost on. 
 
 
-This should be considered a scanner and so a lot of noise should be expected.
+This should be considered a scanner and so a lot of noise should be expected. If you use python (SimpleHTTPServer) to listen for connections be sure to save your scan results. Else, use apache and check your logs. 
 
 For pwnage, comment out the first command that tells your webhost which system is vulnerable to what and uncomment out the second command which will download and execute a payload. There is also a set of commands you can walk through to exploit linux/aix systems.
 
