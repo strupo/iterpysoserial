@@ -1,19 +1,18 @@
 # iterpysoserial 
 
-download a copy of ysoserial-master-SNAPSHOT.jar to ysoserial/src/main/java 
+Default settings will throw the RMIRegistryExploit and Jdk7u21 payload combination over the ports listed in ports.txt against the systems you've defined in targets.txt. 
 
-todo: enter the rest of usage notes.
+You must define targets in targets.txt
+You must define a webhost (--host), this will serve up your ps1 or elf.
+You must define a webhost port (--port), this is the port that victim will connect to your webhost on. 
 
-Improvements:
+This should be considered a scanner and so a lot of noise should be expected.
 
-   Multithreaded (improves performance) 
+For pwnage, comment out the first command that tells your webhost which system is vulnerable to what and uncomment out the second command which will download and execute a payload. There is also a set of commands you can walk through to exploit linux/aix systems.
 
-   OS detection 
+If you're so inclined, feel free to use all the payloads instead of only Jdk7u21. I haven't played with a lot of the newer payloads that are included now, but my experience from when this was relatively new showed that more than 90% of the time if Groovy1 or any of the Sping or CommonCollections payloads worked, so did Jdk7u21. 
 
-   Modes:
-      Quick scan and Full scan
-   
-      Quick Exploit and Thorough Exploit
+
 
 
 # ysoserial 
